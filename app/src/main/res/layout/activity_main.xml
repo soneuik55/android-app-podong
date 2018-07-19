@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/back3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="325dp"
+            android:layout_height="59dp"
+            android:text="Where is my pet?"
+            android:textColor="#8f96c5"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/podong_main"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/podong" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/chipButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="search microchip #"
+
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+
+            android:id="@+id/flyer_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Make a flyer of your pet"
+
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/map_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Where did you lose ?"
+
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+        <Button
+        android:id="@+id/findShelter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="find pet shelters near you"
+
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+
+        <Button
+            android:id="@+id/petbreed_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Pet breed Classifer"
+
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

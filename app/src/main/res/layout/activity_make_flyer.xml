@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:id="@+id/screen_shot">
+
+
+    <!--Top bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HELP TO FIND LOST PET"
+            android:textColor="@color/colorAccent"
+
+            android:textSize="30dp"
+            app:srcCompat="@drawable/doggie" />
+
+    </LinearLayout>
+
+    <!--profile-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="80"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <EditText
+            android:id="@+id/name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:text="                                 Name"/>
+
+        <ImageView
+
+            android:id="@+id/image_Insert"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="75"
+            app:srcCompat="@drawable/doggie" />
+
+
+        <EditText
+            android:id="@+id/reward_edit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:text="                           $ REWARDS $"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25">
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="30"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Breed"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/breed_edit"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="20dp"
+                    android:gravity="bottom"
+                    android:textSize="20sp"
+                    android:layout_weight="50"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@android:color/background_dark"
+                    android:text=""/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="20"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="20sp"
+                    android:text="Age"
+                    android:layout_weight="50"
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_height="0dp" />
+
+                <EditText
+                    android:id="@+id/age_edit"
+                    android:layout_weight="50"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="''"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="20dp"
+                    android:gravity="bottom"
+                    android:textColor="@android:color/background_dark"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="30"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="20sp"
+                    android:text="Contact #"
+                    android:layout_weight="50"
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_height="0dp" />
+
+                <EditText
+                    android:id="@+id/contact_edit"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="15dp"
+                    android:gravity="bottom"
+                    android:textSize="15sp"
+                    android:layout_weight="50"
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_height="0dp"
+                    android:text="( )"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="30"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="17sp"
+                    android:text="Day(Last Seen)"
+                    android:layout_weight="50"
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_height="0dp" />
+
+                <EditText
+                    android:id="@+id/day_edit"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="15dp"
+                    android:gravity="bottom"
+                    android:textSize="15sp"
+                    android:layout_weight="50"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@android:color/background_dark"
+                    android:text="MM/DD"/>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <!-- Choice  -->
+    <LinearLayout
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/share_Button"
+            android:text="Share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            app:srcCompat="@drawable/share"/>
+
+        <Button
+            android:id="@+id/upload_image"
+            android:layout_width="0dp"
+            android:text="Upload"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            app:srcCompat="@drawable/post"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
