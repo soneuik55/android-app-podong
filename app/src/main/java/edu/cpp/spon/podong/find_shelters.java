@@ -32,9 +32,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by User on 10/2/2017.
- */
+
 
 public class find_shelters extends AppCompatActivity implements OnMapReadyCallback {
 
